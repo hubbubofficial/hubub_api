@@ -1,4 +1,4 @@
-defmodule HububApi.DataCase do
+defmodule Hubub.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,20 +16,20 @@ defmodule HububApi.DataCase do
 
   using do
     quote do
-      alias HububApi.Repo
+      alias Hubub.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import HububApi.DataCase
+      import Hubub.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(HububApi.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Hubub.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(HububApi.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Hubub.Repo, {:shared, self()})
     end
 
     :ok

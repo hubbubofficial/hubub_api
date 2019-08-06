@@ -1,10 +1,10 @@
-defmodule HububApi.UsersTest do
-  use HububApi.DataCase
+defmodule Hubub.UsersTest do
+  use Hubub.DataCase
 
-  alias HububApi.Users
+  alias Hubub.Users
 
   describe "users" do
-    alias HububApi.Users.User
+    alias Hubub.Users.User
 
     @valid_attrs %{email: "some email", name_first: "some name_first", name_last: "some name_last", phone: "some phone", title: "some title"}
     @update_attrs %{email: "some updated email", name_first: "some updated name_first", name_last: "some updated name_last", phone: "some updated phone", title: "some updated title"}

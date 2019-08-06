@@ -1,10 +1,10 @@
-defmodule HububApi.TopicsTest do
-  use HububApi.DataCase
+defmodule Hubub.TopicsTest do
+  use Hubub.DataCase
 
-  alias HububApi.Topics
+  alias Hubub.Topics
 
   describe "topics" do
-    alias HububApi.Topics.Topic
+    alias Hubub.Topics.Topic
 
     @valid_attrs %{topic: "some topic"}
     @update_attrs %{topic: "some updated topic"}

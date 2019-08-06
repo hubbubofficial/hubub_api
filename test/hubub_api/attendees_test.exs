@@ -1,10 +1,10 @@
-defmodule HububApi.AttendeesTest do
-  use HububApi.DataCase
+defmodule Hubub.AttendeesTest do
+  use Hubub.DataCase
 
-  alias HububApi.Attendees
+  alias Hubub.Attendees
 
   describe "attendee" do
-    alias HububApi.Attendees.Attendee
+    alias Hubub.Attendees.Attendee
 
     @valid_attrs %{}
     @update_attrs %{}

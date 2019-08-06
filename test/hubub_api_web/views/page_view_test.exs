@@ -1,3 +1,3 @@
-defmodule HububApiWeb.PageViewTest do
-  use HububApiWeb.ConnCase, async: true
+defmodule HububWeb.PageViewTest do
+  use HububWeb.ConnCase, async: true
 end

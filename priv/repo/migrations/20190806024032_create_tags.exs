@@ -1,4 +1,4 @@
-defmodule HububApi.Repo.Migrations.CreateTags do
+defmodule Hubub.Repo.Migrations.CreateTags do
   use Ecto.Migration
 
   def change do

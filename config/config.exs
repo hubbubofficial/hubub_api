@@ -7,15 +7,15 @@
 # General application configuration
 use Mix.Config
 
-config :hubub_api,
-  ecto_repos: [HububApi.Repo]
+config :hubub,
+  ecto_repos: [Hubub.Repo]
 
 # Configures the endpoint
-config :hubub_api, HububApiWeb.Endpoint,
+config :hubub, HububWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "HmN9jT6OepfCUJDfRz+4+mxrljKiOuH9wuG3faKXsu27QCGcjaUwRhaGWriLoUoG",
-  render_errors: [view: HububApiWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: HububApi.PubSub, adapter: Phoenix.PubSub.PG2]
+  render_errors: [view: HububWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Hubub.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,

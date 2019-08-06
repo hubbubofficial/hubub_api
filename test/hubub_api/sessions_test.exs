@@ -1,10 +1,10 @@
-defmodule HububApi.SessionsTest do
-  use HububApi.DataCase
+defmodule Hubub.SessionsTest do
+  use Hubub.DataCase
 
-  alias HububApi.Sessions
+  alias Hubub.Sessions
 
   describe "sessions" do
-    alias HububApi.Sessions.Session
+    alias Hubub.Sessions.Session
 
     @valid_attrs %{email: "some email", end_date: "2010-04-17T14:00:00Z", name_last: "some name_last", phone: "some phone", start_date: "2010-04-17T14:00:00Z", title: "some title"}
     @update_attrs %{email: "some updated email", end_date: "2011-05-18T15:01:01Z", name_last: "some updated name_last", phone: "some updated phone", start_date: "2011-05-18T15:01:01Z", title: "some updated title"}

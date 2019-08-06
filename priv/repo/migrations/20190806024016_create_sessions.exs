@@ -1,4 +1,4 @@
-defmodule HububApi.Repo.Migrations.CreateSessions do
+defmodule Hubub.Repo.Migrations.CreateSessions do
   use Ecto.Migration
 
   def change do

@@ -1,10 +1,10 @@
-defmodule HububApi.TagsTest do
-  use HububApi.DataCase
+defmodule Hubub.TagsTest do
+  use Hubub.DataCase
 
-  alias HububApi.Tags
+  alias Hubub.Tags
 
   describe "tags" do
-    alias HububApi.Tags.Tag
+    alias Hubub.Tags.Tag
 
     @valid_attrs %{tag: "some tag"}
     @update_attrs %{tag: "some updated tag"}

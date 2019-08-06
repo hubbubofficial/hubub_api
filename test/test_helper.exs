@@ -1,2 +1,2 @@
 ExUnit.start()
-Ecto.Adapters.SQL.Sandbox.mode(HububApi.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(Hubub.Repo, :manual)

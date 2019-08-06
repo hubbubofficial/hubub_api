@@ -1,4 +1,4 @@
-defmodule HububApiWeb.ChannelCase do
+defmodule HububWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,15 +21,15 @@ defmodule HububApiWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint HububApiWeb.Endpoint
+      @endpoint HububWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(HububApi.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Hubub.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(HububApi.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Hubub.Repo, {:shared, self()})
     end
 
     :ok

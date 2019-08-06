@@ -1,5 +1,5 @@
-defmodule HububApiWeb.PageControllerTest do
-  use HububApiWeb.ConnCase
+defmodule HububWeb.PageControllerTest do
+  use HububWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get(conn, "/")

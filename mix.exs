@@ -1,9 +1,9 @@
-defmodule HububApi.MixProject do
+defmodule Hubub.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :hubub_api,
+      app: :hubub,
       version: "0.1.0",
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule HububApi.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {HububApi.Application, []},
+      mod: {Hubub.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

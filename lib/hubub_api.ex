@@ -1,6 +1,6 @@
-defmodule HububApi do
+defmodule Hubub do
   @moduledoc """
-  HububApi keeps the contexts that define your domain
+  Hubub keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

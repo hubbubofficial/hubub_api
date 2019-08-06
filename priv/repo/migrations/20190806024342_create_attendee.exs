@@ -1,4 +1,4 @@
-defmodule HububApi.Repo.Migrations.CreateAttendee do
+defmodule Hubub.Repo.Migrations.CreateAttendee do
   use Ecto.Migration
 
   def change do

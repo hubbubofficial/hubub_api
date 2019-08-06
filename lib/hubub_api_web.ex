@@ -1,12 +1,12 @@
-defmodule HububApiWeb do
+defmodule HububWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use HububApiWeb, :controller
-      use HububApiWeb, :view
+      use HububWeb, :controller
+      use HububWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,19 +19,19 @@ defmodule HububApiWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: HububApiWeb
+      use Phoenix.Controller, namespace: HububWeb
 
       import Plug.Conn
-      import HububApiWeb.Gettext
-      alias HububApiWeb.Router.Helpers, as: Routes
+      import HububWeb.Gettext
+      alias HububWeb.Router.Helpers, as: Routes
     end
   end
 
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/hubub_api_web/templates",
-        namespace: HububApiWeb
+        root: "lib/hubub_web/templates",
+        namespace: HububWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
@@ -39,9 +39,9 @@ defmodule HububApiWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import HububApiWeb.ErrorHelpers
-      import HububApiWeb.Gettext
-      alias HububApiWeb.Router.Helpers, as: Routes
+      import HububWeb.ErrorHelpers
+      import HububWeb.Gettext
+      alias HububWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -56,7 +56,7 @@ defmodule HububApiWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import HububApiWeb.Gettext
+      import HububWeb.Gettext
     end
   end
 
