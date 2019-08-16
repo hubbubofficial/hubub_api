@@ -9,7 +9,7 @@ defmodule HububWeb.Router do
     scope "/v1", V1 do
       pipe_through :api
 
-      resources "/users", UserController, only: [:index, :show, :create, :update, :delete]
+      resources "/users", UserController, only: [:show, :create, :update, :delete]
     end
 
     # Other scopes may use custom stacks.
